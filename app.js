@@ -21,13 +21,17 @@ const user = {
 
 app.get('/', (req, res) => {
     res.render('pages/index', {
-        user: user
+        user: user,
+        title: "Home Page",
+
     })
 })
 
 app.get('/articles', (req, res) => {
     res.render('pages/articles', {
-        articles: posts
+        articles: posts,
+        title : "Articles",
+
     })
 })
 
